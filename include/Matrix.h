@@ -14,7 +14,6 @@ namespace math_club
 
     Matrix(int rowLen, int colLen); //
 
-    Matrix（
     
   private:
     int rowSize; //矩阵行数

@@ -14,7 +14,11 @@ namespace math_club
 
     Matrix(int rowLen, int colLen); //
 
+    ~Matrix(void) { delete [] ArrayData; }
     
+    //需修正： 增加行，列超过范围的判断
+    inline Complex& operator()(int row, int col) { return ArrayData[row * colSize + col]; }
+
   private:
     int rowSize; //矩阵行数
     int colSize; //矩阵列数

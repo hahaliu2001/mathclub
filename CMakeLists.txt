@@ -11,4 +11,4 @@ include_directories(include)
 add_subdirectory(src)
 add_subdirectory(tests)
 
-# target_link_libraries(mathclub_run patterns)
+target_link_libraries(mathclub_run MathOperaterLib)
